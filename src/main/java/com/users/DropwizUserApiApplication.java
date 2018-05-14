@@ -14,7 +14,6 @@ public class DropwizUserApiApplication extends Application<DropwizUserApiConfigu
     @Override
     public void run(final DropwizUserApiConfiguration configuration,
                     final Environment environment) {
-        // TODO: implement application
         final UserService userApp = new UserService();
         environment.jersey().register(userApp);
     }
