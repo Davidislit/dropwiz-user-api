@@ -2,10 +2,7 @@ package com.users.db;
 
 import com.users.resources.User;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class UserDB {
     private static Map<Integer,User> users = new HashMap<Integer, User>();
@@ -24,6 +21,15 @@ public class UserDB {
         return temp;
     }
 
+        public static List<User> getUsersSorted(){
+        List<User> temp = new ArrayList<User>();
+        for(Integer index: users.keySet()){
+            temp.add(users.get(index));
+        }
+        temp.sort(Comparator.comparing(User::getUserName));
+        return temp;
+    }
+    
     public static String saveUser(User usr){
         String status = "";
         if(users.get(usr.getId()) != null){
