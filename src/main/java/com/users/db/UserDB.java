@@ -11,9 +11,9 @@ public class UserDB {
     private static Map<Integer,User> users = new HashMap<Integer, User>();
 
     static{
-        users.put(1, new User(1,"User1","User","1"));
-        users.put(2, new User(2,"User2","StamUser","ma"));
-        users.put(3, new User(2,"User3","Shalosh","ba"));
+        users.put(1, new User(1,"User1","User","one"));
+        users.put(2, new User(2,"User2","UserTwo","two"));
+        users.put(3, new User(2,"User3","UserThree","three"));
     }
 
     public static List<User> getUsers(){
