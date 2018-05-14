@@ -12,16 +12,6 @@ public class DropwizUserApiApplication extends Application<DropwizUserApiConfigu
     }
 
     @Override
-    public String getName() {
-        return "DropwizUserApi";
-    }
-
-    @Override
-    public void initialize(final Bootstrap<DropwizUserApiConfiguration> bootstrap) {
-        // TODO: application initialization
-    }
-
-    @Override
     public void run(final DropwizUserApiConfiguration configuration,
                     final Environment environment) {
         // TODO: implement application
