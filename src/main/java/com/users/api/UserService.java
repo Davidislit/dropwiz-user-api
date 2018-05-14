@@ -22,6 +22,14 @@ public class UserService {
     public List<User> getUsers(){
         return UserDB.getUsers();
     }
+    
+    @GET
+    @Timed
+    @Path("/get/sorted")
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<User> getUsersSorted(){
+        return UserDB.getUsersSorted();
+    }
 
     @POST
     @Timed
