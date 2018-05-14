@@ -8,9 +8,10 @@ public class UserDB {
     private static Map<Integer,User> users = new HashMap<Integer, User>();
 
     static{
-        users.put(1, new User(1,"User1","User","one"));
-        users.put(2, new User(2,"User2","UserTwo","two"));
-        users.put(3, new User(2,"User3","UserThree","three"));
+        users.put(1, new User(1,"UserOne","User","one"));
+        users.put(2, new User(2,"UserTwo","UserTwo","two"));
+        users.put(3, new User(3,"UserThree","UserThree","three"));
+        users.put(4, new User(4,"UserFour","UserFour","four"));
     }
 
     public static List<User> getUsers(){
