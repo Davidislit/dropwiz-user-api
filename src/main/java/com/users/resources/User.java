@@ -40,9 +40,4 @@ public class User {
         return lastName;
     }
 
-
-    @Override
-    public String toString() {
-        return "User ID: " + id + ", User Name: " + userName + ", First Name: " + firstName + ", Last Name: " + lastName;
-    }
 }
