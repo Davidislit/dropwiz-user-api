@@ -12,5 +12,3 @@ How to start the DropwizUserApi application
 {"id":"1","userName":"User","firstName":"First","lastName":"Last"}
 
 ---
-
-To see your applications health enter url `http://localhost:8081/healthcheck`
